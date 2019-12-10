@@ -19,7 +19,7 @@ class DB
         $this->fetchMode = $fetchMode;
         $config = require __DIR__ . '/../config.php';
         try {
-            $this->pdo = new \PDO("mysql:host=localhost;dbname={$config['database']['dbname']};charset=utf8",$config['database']['username'] , $config['database']['password']);
+            $this->pdo = new \PDO("mysql:host=localhost;dbname={$config['Database']['DBName']};charset=utf8",$config['Database']['Username'] , $config['Database']['Password']);
 
         } catch (\Exception $e) {
            die('Error : ' . $e->getMessage());
