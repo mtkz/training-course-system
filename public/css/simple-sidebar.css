@@ -68,7 +68,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Vazir';
+  font-family: 'Vazir' !important;
   font-weight: 300;
   direction: rtl !important;
 }

@@ -17,9 +17,12 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">پنل مدیریتی</div>
       <div class="list-group list-group-flush">
-        <a href="<?= ROOT_PATH  ?>" class="list-group-item list-group-item-action bg-light">داشبورد</a>
-        <a href="<?= ROOT_PATH  ?>bots" class="list-group-item list-group-item-action bg-light">مدیریت بات ها</a>
-        <a href="<?= ROOT_PATH  ?>chats" class="list-group-item list-group-item-action bg-light">لیست گروه ها، کانال ها</a>
+        <a href="<?= ROOT ?>dashboard/users" class="list-group-item list-group-item-action bg-light">
+          دانش پذیران
+        </a>
+        <a href="<?= ROOT ?>dashboard/courses" class="list-group-item list-group-item-action bg-light">
+          دوره های آموزشی
+        </a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
