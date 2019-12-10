@@ -1,4 +1,4 @@
-<?php require __DIR__ .'./../../index.php'; ?>
+<?php require_once  __DIR__ .'./../../bootstrap/autoload.php';?>
 
 <div class="card mt-5">
     <div class="card-header">

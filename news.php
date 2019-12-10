@@ -1,4 +1,4 @@
-<?php require __DIR__ .'./index.php';
+<?php require_once  __DIR__ .'./bootstrap/autoload.php';
 $news = (new App\Controllers\NewsController)->index();
 ?>
 
