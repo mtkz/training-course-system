@@ -1,7 +1,8 @@
 <?php
 
   $config = require __DIR__ .'./config.php';
-  define('ROOT_PATH' ,$config['Route']['Path']);
+  define('ROOT_PATH', $config['Route']['Path']);
+  define('ROOT', $config['Route']['Root']);
 
 
 function viewRender($layout, $title = 'Document'){
