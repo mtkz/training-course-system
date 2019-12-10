@@ -5,9 +5,9 @@ return [
     'Root' => 'http://localhost:8000/'
   ],
   'Database' =>[
-    'Username' => '',
+    'Username' => 'root',
     'Password' => '',
-    'DBName' => ''
+    'DBName' => 'training_course_system'
   ]
 ];
 ?>
