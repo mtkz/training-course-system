@@ -1,35 +1,19 @@
 <?php namespace App\Controllers;
 
+use App\Models\Course;
+// use App\Models\News;
+
 class HomeController extends Controller {
 
-  public function index()
+  public function listCourses()
   {
-      return [
-        'courses' => [
-          [
-            'title' => '  آموزش پروژه محور ',
-            'image' => 'images/learning.jpg',
-            'body'  => ' یک فریم ورک جاوا اسکریپت برای ساختن برنامه های موبایلِ native است. این فریم ورک از فریم ورکِ React استفاده می کنه و APIها و کامپوننت های..'
-          ],
-          [
-            'title' => '  آموزش پروژه محور ',
-            'image' => 'images/learning.jpg',
-            'body'  => ' یک فریم ورک جاوا اسکریپت برای ساختن برنامه های موبایلِ native است. این فریم ورک از فریم ورکِ React استفاده می کنه و APIها و کامپوننت های..'
-          ],
-          [
-            'title' => '  آموزش پروژه محور ',
-            'image' => 'images/learning.jpg',
-            'body'  => ' یک فریم ورک جاوا اسکریپت برای ساختن برنامه های موبایلِ native است. این فریم ورک از فریم ورکِ React استفاده می کنه و APIها و کامپوننت های..'
-          ],
-          [
-            'title' => '  آموزش پروژه محور ',
-            'image' => 'images/learning.jpg',
-            'body'  => ' یک فریم ورک جاوا اسکریپت برای ساختن برنامه های موبایلِ native است. این فریم ورک از فریم ورکِ React استفاده می کنه و APIها و کامپوننت های..'
-          ],
-
-        ],
-      ];
+      return (new Course)->get();
   }
+
+  // public function listNews()
+  // {
+  //     return (new News)->get();
+  // }
 
 }
 
