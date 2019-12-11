@@ -9,6 +9,7 @@
   <!-- Custom styles for this template -->
   <link href="<?= ROOT_PATH  ?>css/simple-sidebar.css" rel="stylesheet">
   <link href="<?= ROOT_PATH  ?>css/bootstrap-rtl.min.css" rel="stylesheet">
+  <link href="<?= ROOT_PATH  ?>css/font-vazir.css" rel="stylesheet">
 </head>
 
 <body>
