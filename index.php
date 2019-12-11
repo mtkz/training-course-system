@@ -1,6 +1,7 @@
 <?php require_once  __DIR__ .'./bootstrap/autoload.php';
-$courses = (new App\Controllers\HomeController)->listCourses();
-// $news = (new App\Controllers\HomeController)->listNews();
+
+use App\Models\Course;
+use App\Models\News;
 ?>
 
 <div class="col-md-12 mt_gray_bgc p-5">
@@ -10,7 +11,7 @@ $courses = (new App\Controllers\HomeController)->listCourses();
         </div>
         <div class="col-md-12 my-3">
             <div class="row">
-              <?php foreach ($courses as $course): ?>
+              <?php foreach ((new Course)->get() as $course): ?>
                 <div class="card col-md-3 p-0 mt_card">
                     <img src="<?= ROOT_PATH . $course->image ?>" class="card-img-top" alt="<?= $course->title ?>">
                     <div class="card-body p-2">
@@ -35,32 +36,22 @@ $courses = (new App\Controllers\HomeController)->listCourses();
             <h2>جدید ترین اخبار</h2>
         </div>
         <div class="row my-5">
+          <?php foreach (array_chunk((new News)->where('status', true)->get(), 2) as $items): ?>
             <div class="col-md-6">
+              <?php foreach ($items as $item): ?>
                 <div class="mt_news_style_1 col-md-12 p-0">
-
                     <div class=" mt_news_style_1_thumbnail p-0">
-                        <img src="<?= ROOT_PATH ?>images/learning.jpg" alt="">
+                        <img src="<?= ROOT_PATH. $item->image ?>" alt="<?= $item->title ?>">
                     </div>
                     <div class=" mt_news_style_1_description p-2">
-                        <a href="">فرار مالیاتی پزشکان و وکلا معادل نیمی از یارانه نقدی</a>
-                        <p>مدیرکل دفتر آبخیزداری و حفاظت خاک سازمان جنگلها گفت: سالانه 250 میلیون مترمکعب به دلیل فرسایش در پشت سدها رسوب جمع می‌شود که مفهوم آن این است هر سال معادل ظرفیت سد کرج را از دست می‌دهیم </p>
+                        <a href=""><?= $item->title ?></a>
+                        <p><?= $item->content ?></p>
                     </div>
 
                 </div>
+              <?php endforeach ?>
             </div>
-            <div class="col-md-6">
-                <div class="mt_news_style_1 col-md-12 p-0">
-
-                    <div class=" mt_news_style_1_thumbnail p-0">
-                        <img src="<?= ROOT_PATH ?>images/learning.jpg" alt="">
-                    </div>
-                    <div class=" mt_news_style_1_description p-2">
-                        <a href="">فرار مالیاتی پزشکان و وکلا معادل نیمی از یارانه نقدی</a>
-                        <p>مدیرکل دفتر آبخیزداری و حفاظت خاک سازمان جنگلها گفت: سالانه 250 میلیون مترمکعب به دلیل فرسایش در پشت سدها رسوب جمع می‌شود که مفهوم آن این است هر سال معادل ظرفیت سد کرج را از دست می‌دهیم </p>
-                    </div>
-
-                </div>
-            </div>
+          <?php endforeach ?>
         </div>
     </div>
 </div>
