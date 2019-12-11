@@ -13,13 +13,13 @@ use App\Models\News;
             <div class="row">
               <?php foreach ((new Course)->get() as $course): ?>
                 <div class="card col-md-3 p-0 mt_card">
-                    <img src="<?= ROOT_PATH . $course->image ?>" class="card-img-top" alt="<?= $course->title ?>">
+                    <img src="<?= ROOT_PATH . $course->image ?>" class="card-img-top object-fit-cover" alt="<?= $course->title ?>">
                     <div class="card-body p-2">
-                        <h5 class="card-title">
+                        <h6 class="card-title">
                             <?= $course->title ?>
-                        </h5>
+                        </h6>
                         <p class="card-text mt_card_text">
-                            <?= $course->body ?>
+                            <?= substr($course->body, 0, 200). '...' ?>
                         </p>
                         <a href="#" class="btn btn-danger btn-block">مشاهده دوره</a>
                     </div>
@@ -41,11 +41,11 @@ use App\Models\News;
               <?php foreach ($items as $item): ?>
                 <div class="mt_news_style_1 col-md-12 p-0">
                     <div class=" mt_news_style_1_thumbnail p-0">
-                        <img src="<?= ROOT_PATH. $item->image ?>" alt="<?= $item->title ?>">
+                        <img src="<?= ROOT_PATH. $item->image ?>" class="object-fit-cover" alt="<?= $item->title ?>">
                     </div>
                     <div class=" mt_news_style_1_description p-2">
                         <a href=""><?= $item->title ?></a>
-                        <p><?= $item->content ?></p>
+                        <p><?=  substr($item->content, 0, 100). '...' ?></p>
                     </div>
 
                 </div>

@@ -193,6 +193,10 @@ body {
 .widget-about .contact-details li a {
     color: #5867dd
 }
+.object-fit-cover{
+  height: 171px;
+  object-fit: cover;
+}
 
 @media (max-width:991px) {
     .footer-menu {
