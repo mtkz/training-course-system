@@ -197,7 +197,12 @@ body {
   height: 171px;
   object-fit: cover;
 }
-
+.mt_auth_section{
+    background-color: #f1f1f1;
+}
+.mt_auth h1{
+    text-align: center;
+}
 @media (max-width:991px) {
     .footer-menu {
         padding-left: 0

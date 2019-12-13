@@ -1,45 +1,43 @@
-<?php require_once  __DIR__ .'./../../bootstrap/autoload.php';?>
-
+<?php require_once  __DIR__ . './../../bootstrap/autoload.php'; ?>
+<h2 class="main_content_title">لیست دوره ها</h2>
 <div class="card mt-5">
-    <div class="card-header">
-      <h5 class="card-title float-right">
-        لیست دانش پذیران
-      </h5>
-    </div>
-    <!-- /.card-header -->
-    <div class="card-body p-0">
-      <table class="table">
-        <tbody>
+  <div class="card-header">
+    <h5 class="card-title float-right">
+      لیست دوره ها
+    </h5>
+  </div>
+
+  <div class="card-body p-0">
+    <table class="table">
+      <tbody>
         <tr>
           <th>
-            نام
+            نام دوره
           </th>
           <th>
-            نام خانوادگی
+            ظرفیت
           </th>
           <th>
-            نام کاربری
+            مدرس
           </th>
-          <th>عملیات</th>
+          <th>
+            زمان برگذاری
+          </th>
+          <th>
+            قیمت
+          </th>
+          <th>
+            لیست حضور و غیاب
+          </th>
+          <th>
+            عملیات
+          </th>
         </tr>
-        <tr>
-          <td>آپدیت نرم افزار</td>
-          <td>
-            لابیاتیلاتبتاال
-          </td>
-          <td>
-            لابیاتیلاتبتاال
-          </td>
-          <td>
-            <div class="btn-groupbtn-group-sm" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-danger">حذف</button>
-                <button type="button" class="btn btn-secondary">ویرایش</button>
-            </div>
-          </td>
-        </tr>
-      </tbody></table>
-    </div>
-    <!-- /.card-body -->
+        <!-- TODO : course loop here ! -->
+      </tbody>
+    </table>
+  </div>
+
 </div>
 
-<?php viewRender('Panel/layout.php' , 'List Courses'); ?>
+<?php viewRender('Panel/layout.php', 'List Courses'); ?>
