@@ -42,6 +42,9 @@
         </div>
       </nav>
       <div class="container-fluid">
+          <div class="col-12 mt-3">
+            <?= flash()->each() ?>
+          </div>
           <?= $content ?>
       </div>
     </div>

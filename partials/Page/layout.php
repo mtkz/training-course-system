@@ -10,6 +10,10 @@
 </head>
 <body>
   <div class="container">
+    <div class="mx-auto col-8 mt-5">
+      <?= flash()->each() ?>
+    </div>
+
     <?= $content ?>
   </div>
   <script src="<?= ROOT_PATH  ?>js/jquery.min.js"></script>

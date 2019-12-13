@@ -2,6 +2,7 @@
 
 use App\Models\Course;
 use App\Models\News;
+
 ?>
 
 <div class="col-md-12 mt_gray_bgc p-5">
