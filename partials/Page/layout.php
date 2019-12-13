@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="mx-auto col-8 mt-5">
+    <div class="mx-auto col-5 mt-5">
       <?= flash()->each() ?>
     </div>
 

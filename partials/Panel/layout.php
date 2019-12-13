@@ -14,16 +14,15 @@
 <body>
 
   <div class="sidenav">
-    <a href="#about"><span class="fa fa-dashboard"></span>داشبورد</a>
+    <a href="<?= ROOT ?>dashboard/"><span class="fa fa-dashboard"></span>داشبورد</a>
     <a class="dropdown-btn"><span class="fa fa-user"></span>مدرسان
 
       <i class="fa fa-caret-down"></i>
       <div class="dropdown-container">
-        <a href="#">لیست مدرسین</a>
-        <a href="#">افزودن مدرس</a>
+        <a href="<?= ROOT ?>dashboard/teachers">لیست مدرسین</a>
+        <a href="<?= ROOT ?>dashboard/teachers/create.php">افزودن مدرس</a>
       </div>
     </a>
-
 
     <a class="dropdown-btn"><span class="fa fa-users"></span>مدیریت کاربران
 
@@ -58,39 +57,12 @@
   </div>
 
   <div class="main">
-    <nav class="navbar navbar-expand-lg navbar-light  mt_dark_navbar">
-      <a class="navbar-brand" href="#">محمد طهوریان</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item dropdown">
-
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Dashboard</a>
-              <a class="dropdown-item" href="#">Edit Profile</a>
-              <a class="dropdown-item" href="#">Log Out</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline m-2 mx-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="جست و جو" aria-label="Search">
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">جست و جو</button>
-        </form>
+    <div class="container-fluid">
+      <div class="col-12 mt-3">
+        <?= flash()->each() ?>
       </div>
-    </nav>
-    <div class="content">
-      <div class="main_content">
-           <div class="col-12 mt-3">
-            <?= flash()->each() ?>
-          </div>
         <?= $content ?>
-      </div>
     </div>
-
   </div>
 
   <script src="<?= ROOT_PATH  ?>js/jquery.min.js"></script>
