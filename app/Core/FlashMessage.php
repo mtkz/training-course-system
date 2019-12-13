@@ -53,7 +53,7 @@ class FlashMessage {
     // Set default markup
     if( $callback === null ) {
       $callback = function($name, $message) {
-        echo '<div style="direction: ltr;" class="alert alert-' . $name . '">' . $message . '</div>';
+        echo '<div class="alert alert-' . $name . '">' . $message . '</div>';
       };
     }
     if(is_array($this->messages)){
