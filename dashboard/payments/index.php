@@ -1,9 +1,9 @@
-<?php require_once  __DIR__ .'./../../bootstrap/autoload.php'; ?>
-<h2 class="main_content_title">مدیریت کاربران</h2>
+<?php require_once  __DIR__ .'./../../bootstrap/autoload.php';?>
+<h2 class="main_content_title">پرداختی ها</h2>
 <div class="card mt-5">
     <div class="card-header">
       <h5 class="card-title float-right">
-        لیست دانش پذیران
+        لیست پرداختی ها
       </h5>
     </div>
     <!-- /.card-header -->
@@ -12,20 +12,19 @@
         <tbody>
         <tr>
           <th>
-            نام
+            نام درگاه
           </th>
           <th>
-            نام خانوادگی
+            پرداخت کننده
           </th>
           <th>
-            نام کاربری
+            وضعیت
           </th>
-          <th>عملیات</th>
+          
         </tr>
-        <!-- TODO : users loop here ! -->
+        <!-- TODO : payment loop here ! -->
       </tbody></table>
     </div>
     <!-- /.card-body -->
 </div>
-
-<?php viewRender('Panel/layout.php' , 'List Users'); ?>
+<?php viewRender('Panel/layout.php', 'Admin Dashboard | Payments'); ?>
