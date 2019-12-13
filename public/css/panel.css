@@ -1,10 +1,5 @@
-@font-face {
-    font-family: iraniansans;
-    src: url("../fonts/IRANSansWeb.ttf");
-}
 
 body {
-    font-family: iraniansans;
     direction: rtl;
     background-color: #F1F2F7;
 }
