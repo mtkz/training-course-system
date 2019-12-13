@@ -1,0 +1,161 @@
+@font-face {
+    font-family: iraniansans;
+    src: url("../fonts/IRANSansWeb.ttf");
+}
+
+body {
+    font-family: iraniansans;
+    direction: rtl;
+    background-color: #F1F2F7;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color: #777777;
+}
+
+.sidenav {
+    height: 100%;
+    width: 17%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #2a3542;
+    overflow: scroll;
+}
+
+.sidenav a, .sidenav a .dropdown-btn {
+    padding: 10px;
+    font-size: 14px;
+    color: white!important;
+    display: block;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a span {
+    padding-left: 6px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    background-color: #2a3542;
+}
+
+/* On mouse-over */
+
+.sidenav a:hover, .dropdown-btn:hover {
+    background-color: #00c853;
+    padding-right: 15px;
+    transition: .3s;
+}
+
+/* Main content */
+
+.main {
+    float: left;
+    width: 83%;
+    font-size: 18px;
+}
+
+.content {
+    width: 100%;
+    padding: 30px 40px;
+    text-align: justify;
+}
+
+.main_content {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.main_content_title {
+    color: #ff1a1a;
+    padding-bottom: 15px;
+}
+
+/* Add an active class to the active dropdown button */
+
+.active {
+    background-color: #00c853;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #192026;
+}
+
+.fa-caret-down {
+    padding-right: 8px;
+}
+
+label {
+    color: #a9a9a9;
+}
+
+.mt_dark_navbar {
+    background-color: #ffffff;
+    box-shadow: 0 0 4px #cccccc;
+}
+
+.site_info {
+    width: 25%;
+    float: left;
+    background-color: #f3f3f3;
+    height: 200px;
+    transform: scale(.85);
+    border-radius: 10px;
+    box-shadow: 0 0px 18px rgba(80, 80, 140, .1);
+}
+
+.site_info h3 {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.site_info h3 span {
+    font-size: 35px;
+}
+.mt_exit_panel{
+    transform: scale(.9);
+}
+/* Some media queries for responsiveness */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        float: none;
+        display: inline-block;
+        position: relative;
+    }
+    .main {
+        float: none;
+        width: 100%;
+        font-size: 14px;
+    }
+    .sidenav a {
+        font-size: 16px;
+        text-align: center;
+    }
+}

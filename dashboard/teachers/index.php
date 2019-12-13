@@ -1,9 +1,9 @@
-<?php require_once  __DIR__ .'./../../bootstrap/autoload.php'; ?>
-<h2 class="main_content_title">مدیریت کاربران</h2>
+<?php require_once  __DIR__ .'./../../bootstrap/autoload.php';?>
+<h2 class="main_content_title">لیست مدرسین</h2>
 <div class="card mt-5">
     <div class="card-header">
       <h5 class="card-title float-right">
-        لیست دانش پذیران
+        لیست مدرسین
       </h5>
     </div>
     <!-- /.card-header -->
@@ -12,7 +12,7 @@
         <tbody>
         <tr>
           <th>
-            نام
+            نام مدرس
           </th>
           <th>
             نام خانوادگی
@@ -22,10 +22,9 @@
           </th>
           <th>عملیات</th>
         </tr>
-        <!-- TODO : users loop here ! -->
+        <!-- TODO : teachers loop here ! -->
       </tbody></table>
     </div>
     <!-- /.card-body -->
 </div>
-
-<?php viewRender('Panel/layout.php' , 'List Users'); ?>
+<?php viewRender('Panel/layout.php', 'Admin Dashboard | News'); ?>
