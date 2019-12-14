@@ -28,9 +28,7 @@
 
       <i class="fa fa-caret-down"></i>
       <div class="dropdown-container">
-        <a href="#">لینک 1</a>
-        <a href="#">لینک 2</a>
-        <a href="#">لینک 3</a>
+        <a href="<?= ROOT ?>dashboard/users">لیست کاربران</a>
       </div>
     </a>
     <a class="dropdown-btn"><span class="fa fa-certificate"></span>دوره های آموزشی
