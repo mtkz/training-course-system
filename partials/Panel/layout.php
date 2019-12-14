@@ -50,7 +50,7 @@
 
     <a href="#contact"><span class="fa fa-credit-card"></span>پرداختی</a>
     <div class="mt_exit_panel my-4">
-      <button class="btn btn-block btn-danger" href="">خروج از پنل</a>
+      <a class="btn btn-block btn-danger" href="<?=ROOT?>dashboard/logout.php">خروج از پنل</a>
     </div>
   </div>
 
