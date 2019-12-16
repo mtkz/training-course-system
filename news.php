@@ -4,7 +4,7 @@ $news = (new App\Controllers\NewsController)->index();
 
 <div class="mt_single_news col-md-12 py-5">
     <div class="container">
-        <div class="mt_single_post col-md-12">
+        <div class="mt_single_post col-md-12 ">
             <div class="mt_single_post_titlebar my-5">
                 <h1>
                   <?= $news['title'] ?>

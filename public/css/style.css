@@ -24,7 +24,8 @@ body {
     min-height: 100%;
 }
 
-.mt_title_bar {}
+.mt_title_bar {
+}
 
 .mt_title_bar h2 {
     font-size: 30px;
@@ -32,6 +33,10 @@ body {
 
 .mt_gray_bgc {
     background-color: #f9f9f9;
+}
+
+.mt_white_bgc {
+    background-color: #fff;
 }
 
 .mt_card_text {
@@ -42,10 +47,21 @@ body {
 .mt_card {
     transform: scale(.93);
     transition: .4s;
+    position: relative;
 }
 
 .mt_card:hover {
     box-shadow: 0 0 20px #cccccc;
+}
+
+.mt_time_data {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f50057;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 3px;
 }
 
 .mt_news_style_1 {
@@ -82,25 +98,67 @@ body {
     text-align: justify;
     font-size: 18px;
 }
-.mt_single_post_data{
+
+.mt_single_post_data {
     display: inline-block;
 }
-.mt_single_post_data ul li{
+
+.mt_single_post_data ul li {
     float: right;
     padding: 6px 10px;
 }
-.mt_single_post_data ul li a{
+
+.mt_single_post_data ul li a {
     color: #999;
 }
-.mt_404{
+
+.mt_single_course {
+}
+
+.mt_single_sidebar {
+    margin-bottom: 20px;
+}
+.mt_single_sidebar .card-body{
+    padding: 5px;
+}
+.mt_single_sidebar ul{
+    padding: 0;
+}
+.mt_single_sidebar ul li{
+    padding: 10px;
+    border-bottom: 1px dashed #dddddd;
+    color: #424242;
+}
+.mt_single_sidebar ul li:last-child{
+    border-bottom: none;
+}
+.mt_single_sidebar ul li span{
+    padding: 0 8px;
+}
+.mt_border{
+    border: 1px solid #dddddd;
+}
+.mt_course_description p{
+    line-height: 35px;
+    font-size: 14px;
+    text-align: justify;
+    color: #424242;
+}
+
+.mt_404 {
     display: block;
     width: 50%;
     margin: 150px auto;
     text-align: center;
 }
-.mt_404 h1{
+
+.mt_404 h1 {
     font-size: 70px;
 }
+.mt_buy_course{
+    box-shadow: 0 0 20px #cccccc;
+}
+
 
 .footer-big {
     padding: 105px 0 65px 0
@@ -193,17 +251,21 @@ body {
 .widget-about .contact-details li a {
     color: #5867dd
 }
-.object-fit-cover{
-  height: 171px;
-  object-fit: cover;
+
+.object-fit-cover {
+    height: 171px;
+    object-fit: cover;
 }
-.mt_auth_section{
+
+.mt_auth_section {
     background-color: #f1f1f1;
 }
-.mt_auth h1{
+
+.mt_auth h1 {
     text-align: center;
 }
-@media (max-width:991px) {
+
+@media (max-width: 991px) {
     .footer-menu {
         padding-left: 0
     }

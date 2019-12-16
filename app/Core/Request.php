@@ -1,4 +1,6 @@
-<?php namespace App\Core;
+<?php
+
+namespace App\Core;
 
 class Request
 {
@@ -25,7 +27,7 @@ class Request
         if ($this->isPost() && $post)
             return isset($_POST) ? $_POST : null;
 
-        return isset($_GET) ?array_map('htmlspecialchars' , $_GET) : null;
+        return isset($_GET) ? array_map('htmlspecialchars', $_GET) : null;
     }
 
     /**
