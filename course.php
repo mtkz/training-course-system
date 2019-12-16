@@ -83,16 +83,7 @@
                             درمورد آموزش‌ها صحبت کردیم، اگرچه...
                         </p>
                     </div>
-                    <div class="mt_white_bgc mt_border p-0">
-                        <ul>
-                            <li><a href="http://spaceipsum.com/">Space Ipsum</a>
-                            </li>
-                            <li><a href="http://cupcakeipsum.com/">Cupcake Ipsum</a>
-                            </li>
-                            <li><a href="http://tunaipsum.com/">Tuna Ipsum</a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-4 p-0 mt_sidebar">
